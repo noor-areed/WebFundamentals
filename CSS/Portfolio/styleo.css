@@ -1,0 +1,135 @@
+
+.container{
+    width: 970px;
+    min-height: 1000px;
+    /*background-color:#6f5964;*/
+    background: linear-gradient(#1f0f13,#6f5964);
+}
+
+.header{
+    width: 970px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    text-align:justify;
+    align-content:center;
+    background-color: lightgray;
+    color: black;
+}
+
+.body1{
+    width: 970px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    /*background: linear-gradient(#1f0f13,#6f5964);*/
+
+
+}
+.image{
+    width: 400px;
+    height: 250px;
+    border: 5px solid silver;
+}
+.about{
+    width: 500px;
+    height: 250px;
+    border: 5px solid silver;
+    padding: 0px;
+    /*background-color:whitesmoke;*/
+    background: linear-gradient(to bottom right, #fefefe, #dbcbda);
+
+}
+
+.aboutr{
+    margin: 0px;
+    width: 500px;
+    height:38px;
+    background: linear-gradient(#bdbdbf, #888694, #bdbdbf);
+    color:white ;
+}
+
+.read{
+    color:black;
+
+}
+
+.body2{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.boxs{
+    width: 300px;
+    height: 500px;
+    /*background-color: whitesmoke;*/
+    background: linear-gradient(to bottom right, #fefefe, #dbcbda); 
+
+}
+
+.cv{
+    margin: 0px;
+    width: 296px;
+    height:38px;
+    background: linear-gradient(#bdbdbf, #888694, #bdbdbf);
+    color:white;
+    padding-left: 4px;
+    
+}
+
+.mode{
+    width: 300px;
+    height: 160px;
+}
+
+.small{
+    margin: 0px 5px;
+}
+
+.languages{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.cate{
+    border-radius: 3px;
+    background-color: green;
+    margin-top: 20px;
+    display: block;
+    width: 120px;
+    text-align: center;
+    margin-left: 80px;
+    height: 25px;
+    margin-top: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-top: 3px;
+}
+
+#footer{
+    text-align: center;
+    padding: 0px; 
+    background-color: rgba(250, 235, 215, 0.911); 
+    margin: 0px;
+    width: 970px;
+    height: 94px;
+ 
+
+}
+
+#social{
+    display: flex;
+    width: 362px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+#footer img {
+	width: 20px;
+	margin:auto;
+}
