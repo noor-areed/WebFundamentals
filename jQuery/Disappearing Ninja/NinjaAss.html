@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Disappearing Ninja </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+             $(document).ready(function(){
+                $('img').click(function(){
+                    $(this).hide();
+                });
+                $('button').click(function(){
+                    $('img').show();
+                });
+            });
+
+
+        </script>
+
+     </head>
+    <body>
+        <div>
+             <b> jQuery - assignment1</b>
+         </div>
+
+        <div style = "display: flex; width: 100px; height: 100px; margin: 15px; ">
+           <img src="./Images/php.png" alt="phplanguage">
+           <img src="./Images/codeigniter.png" alt="codeigniterlanguage">
+           <img src="./Images/jQuery.png" alt="jQuerylanguage">
+           <img src="./Images/ajax.png" alt="ajaxlanguage">
+        </div> 
+
+        <div style="display: flex; width: 100px; height: 100px;margin: 15px; ">
+            <img src="./Images/mysql.png" alt="mysqllanguage">
+            <img src="./Images/HTML.png" alt="HTMLlanguage">
+            <img src="./Images/CSS.png" alt="csslanguage">
+            <img src="./Images/bootstrap.png" alt="bootstraplanguage">
+        </div>
+        <button style="background-color: green; margin-top: 30px; color: white;"> Restore  </button>
+
+    </body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<title>Hover In/Out</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script>
+		jQuery.fn.swap = function(){
+
+		}
+		$(document).ready(function(){
+			$('img').hover(function(){
+				var temp = $(this).attr('src');
+				$(this).attr('src', $(this).attr('alt-src'));
+				$(this).attr('alt-src', temp);
+			});
+		});		
+	</script>
+</head>
+<body>
+	<img src="JavaScript.png" alt-src='jQuery.png' temp="">
+	<img src="JavaScript.png" alt-src='jQuery.png' temp="">
+	<img src="JavaScript.png" alt-src='jQuery.png' temp="">
+	<img src="JavaScript.png" alt-src='jQuery.png' temp="">
+</body>
+</html>

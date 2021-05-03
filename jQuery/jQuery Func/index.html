@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#red').click(function(){
+                    alert("hello");
+                });
+                $(".hide").click(function(){
+                   $("p.hide").hide();
+                });
+                $("#show").click(function(){
+                   $("p").show();
+                });
+                $(".Toggle").click(function(){
+                   $("p.Toggle").toggle(1000);
+                });
+                $("#btn1").click(function(){
+                   $("#tet").slideUp();
+                });
+                $("#btn2").click(function(){
+                   $("#tet").slideDown();
+                });
+                $(".Toggle between slideUp and slideDown").click(function(){
+                   $("p.Toggle between slideUp and slideDown").slideToggle();
+                 });
+                 $("#btn1").click(function(){
+                   $("p").fadeOut();
+                 });
+                 $("#btn2").click(function(){
+                   $("#Toggle").fadeIn();
+                  });
+                 $(".addclass").click(function(){
+                    $("p.addclass").addClass("intro");
+                 });
+                 $(".before").click(function(){
+                    $("p.before").before("<p>Hello world!</p>");
+                 });
+                 $(".after").click(function(){
+                    $("p.after").after("<p>Hello world!</p>");
+                 });
+                 $(".Appendtext").click(function(){
+                    $("p.Appendtext").append("Appended text.");
+                 });
+                 $(".Appendlist").click(function(){
+                    $("ol.Appendlist").append("<li>Appended item</li>");
+                 });
+                 $(".html").click(function(){
+                    $("p.html").html("Hello world!");
+                 });
+                 $(".attr").click(function(){
+                    $("img.attr").attr("width", "500");
+                 });
+                 $(".val").click(function(){
+                    $("input:text").val("Noor Areed");
+                 });
+                 $(".text").click(function(){
+                    $("p.text").text("Hello world!");
+                 });
+            });
+        </script>
+        <style>
+            .intro {
+              font-size: 150%;
+              color: red;
+            }
+            </style>
+
+    </head>
+
+    <body>
+        <h1> AddClass </h1>
+        <button id="red"> Click</button>
+        <p> click the button to add class 'red' to this paragraph </p>
+        <hr>
+
+        <h1> Slidetoggle</h1>
+        <button class="hide"> Hide</button>
+        <p class="hide"> click the button to Slidetoggle to this paragraph </p>
+        <button id="show">Show</button>
+        <hr>
+        
+        <button class="Toggle">Toggle between hide and show for a p element</button>
+        <p class="Toggle" >This is a paragraph.</p>
+        <hr>
+
+        <p style= "display: none" id="tet">This is a paragraph.</p>
+        <button id="btn1">Slide up</button>
+        <button id="btn2">Slide down</button>
+        <hr>
+        <p class="Toggle between slideUp and slideDown">This is a paragraphto Toggle between slideUp and slideDown </p>
+        <button class="Toggle between slideUp and slideDown"> Toggle slideUp() and slideDown()</button>
+        <hr>
+        <p id="Toggle" >This is a paragraph.</p>
+        <button id="btn1">Fade out</button>
+        <button id="btn2">Fade in</button>
+        <hr>
+        
+        <p class="addclass">This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <button class="addclass">Add a class name to the first p element</button>
+        <hr>
+
+        <button class="before">Insert content before each p element</button>
+        <p class="before">This is a paragraph.</p>
+        <hr>
+        <button class="after">Insert content after each p element</button>
+        <p class="after">This is a paragraph.</p>
+        <hr>
+       
+        <p class="Appendtext">This is another paragraph.</p>
+        <ol class="Appendlist">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+        <button class="Appendtext">Append text</button>
+        <button class="Appendlist">Append list item</button>
+        <hr>
+        <button class="html">Change content of all p elements</button>
+        <p class="html">This is a paragraph.</p>
+        <hr>
+
+        <img class="attr"   src="python.png" alt="python" width="284" height="213"><br>
+        <button class="attr">Set the width attribute of the image</button>
+        <hr>
+
+        <p>Name: <input type="text" name="user"></p>
+        <button class="val">Set the value of the input field</button>
+        <hr>
+
+        <button class="text">Set text content for all p elements</button>
+        <p class="text">This is a paragraph.</p>
+
+    </body>
+</html>
